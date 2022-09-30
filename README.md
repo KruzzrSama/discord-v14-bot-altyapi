@@ -1,14 +1,14 @@
 ## Giriş
 
 #### Hakkında
-Bu bot discord.js v13 versiyonu ile yazılmıştır, özellikleri;
+Bu bot discord.js v14 versiyonu ile yazılmıştır, özellikleri;
 - Kategorili komutlar
 - Daha hızlı mesaj yazdırma fonksiyonları
 - Düzenli konsol çıktıları
 - Gelişmiş yetkilendirme
 
-İndirdiğiniz klasörün içindeki starter.bat botu başlatır, ama başlattığınız zaman karşınıza birsürü konsol hatası gelecektir.
-bunlar tam olarak bir hata değildir, bize sadece eksik modül olduğunu yazdırır, ve bizim gerekli modülleri indirmemiz gerekir.
+İndirdiğiniz klasörün içindeki start.bat botu başlatır, ama başlattığınız zaman karşınıza çok sayıda konsol hatası gelecektir.
+bunlar tam olarak hata değildir, bize sadece eksik modül olduğunu yazdırır, ve bizim gerekli modülleri indirmemiz gerekir.
 - ##### Tüm modülleri aynı anda kurma:
 package.json'un bulunduğu konuma gelip `Shift + Sağ Tık` yapın orada `Powershell` veya `CMD` açma seçeneği gelecek, ona tıklayın ve alttaki komutu girin.
 ```bat
@@ -55,8 +55,7 @@ yukarıdaki kod ile botun durumunu değiştirebilirsiniz,
 İndirdiğiniz klasörün içindeki events klasörüne yeni bir js uzantılı dosya ekliyoruz, dosya adını türkçe karakter içermeden koymak yararınıza olacaktır, sonrasında dosyanın içine aşşağıdaki taslağı yapıştırıyoruz,
 
 ```javascript
-const Discord = require('discord.js');
-const ayarlar = require("../configs.json")
+//...
 /*^^^^gerekli modüllerin ekleneceği kısım^^^^*/
 
 exports.run = async(client, message, args, conf, Discord, functions) => {
